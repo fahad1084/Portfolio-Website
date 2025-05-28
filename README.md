@@ -4,7 +4,8 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 
 ## 🚀 Live Demo
 
-Check out the live version of the portfolio here: [Live Demo]https://fahad1084.github.io/portfolio-website/.
+Check out the live version of the portfolio here:  
+🔗 [https://fahad1084.github.io/portfolio-website/](https://fahad1084.github.io/portfolio-website/)
 
 ## 🛠️ Built With
 
@@ -21,3 +22,6 @@ Check out the live version of the portfolio here: [Live Demo]https://fahad1084.g
 - 📬 Contact form with email integration
 - 🌙 Dark mode
 - 🔒 Responsive and accessible design
+
+## 🤝 Contributing
+Contributions are welcome! You can fix the repo and submit a pull request.
