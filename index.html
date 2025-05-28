@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Muhammad Fahad Noor, a passionate Web and Mobile App Developer.">
+  <meta name="keywords" content="Muhammad Fahad Noor, web developer, mobile app developer, Flutter, .NET, portfolio">
+  <meta name="author" content="Muhammad Fahad Noor">
+  <meta property="og:title" content="Muhammad Fahad Noor | Portfolio">
+  <meta property="og:description" content="Portfolio of Muhammad Fahad Noor, a passionate Web and Mobile App Developer.">
+  <meta property="og:image" content="mypic.jpg">
+  <title>Muhammad Fahad Noor | Portfolio</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <img src="assets/headshot.jpg" alt="Muhammad Fahad Noor" class="headshot">
+        <h1>Fahad Noor</h1>
+        <h2><span id="greeting"></span>, I'm Muhammad Fahad Noor</h2>
+        <p class="subtitle">Crafting innovative web and mobile solutions with .NET and Flutter</p>
+        <p>I'm a <span id="typing-text"></span></p>
+        <div id="clock"></div>
+        <a href="#projects" class="cta-button">Discover My Work</a>
+        <div class="scroll-indicator">↓ Scroll</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I'm a computer science student and developer with a passion for building innovative web and mobile applications using .NET, Flutter, and modern web technologies. My focus is on creating seamless, user-friendly solutions through problem-solving and collaboration. When not coding, I enjoy football and table tennis, embracing teamwork and balance.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <canvas id="skillsChart" width="400" height="400"></canvas>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-cuttlefish"></i>
+            <p>C#</p>
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-flutter"></i>
+            <p>Flutter & Dart</p>
+            <div class="progress-bar" style="width: 20%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+            <div class="progress-bar" style="width: 20%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <p>HTML & CSS</p>
+            <div class="progress-bar" style="width: 95%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+            <div class="progress-bar" style="width: 20%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-bootstrap"></i>
+            <p>Bootstrap</p>
+            <div class="progress-bar" style="width: 50%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <p>MySQL</p>
+            <div class="progress-bar" style="width: 55%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+            <div class="progress-bar" style="width: 25%;"></div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-video"></i>
+            <p>AI Video Creation</p>
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="flutter">Flutter</button>
+        <button class="filter-btn" data-filter="htmlcss">HTML/CSS</button>
+        <button class="filter-btn" data-filter="dotnet">.NET</button>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-tilt data-category="flutter" data-title="Techify" data-description="A mobile app offering tech tutorials and resources with a user-friendly interface and seamless navigation, built using Flutter." data-tech="Flutter, Dart, Firebase">
+          <img src="https://images.unsplash.com/photo-1617042375876-a13e36732a04" alt="Techify" loading="lazy">
+          <h3>Techify</h3>
+          <p>A mobile app offering tech tutorials and resources.</p>
+          <a href="https://your-demo-link.com/techify" target="_blank" class="demo-link">View Demo</a>
+        </div>
+        <div class="project-card" data-tilt data-category="flutter" data-title="Restaurant App" data-description="A mobile app for browsing menus, placing orders, and making reservations, integrated with real-time updates and payment gateways." data-tech="Flutter, Dart, Firebase">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurant App" loading="lazy">
+          <h3>Restaurant App</h3>
+          <p>A mobile app for ordering food and reservations.</p>
+          <a href="https://your-demo-link.com/restaurant-app" target="_blank" class="demo-link">View Demo</a>
+        </div>
+        <div class="project-card" data-tilt data-category="htmlcss" data-title="Task Manager" data-description="A task management app with reminders, priority settings, and cross-device synchronization, built with HTML, CSS, and JavaScript." data-tech="HTML, CSS, JavaScript">
+          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b" alt="Task Manager" loading="lazy">
+          <h3>Task Manager</h3>
+          <p>A task management web app with syncing.</p>
+          <a href="https://your-demo-link.com/task-manager" target="_blank" class="demo-link">View Demo</a>
+        </div>
+        <div class="project-card" data-tilt data-category="htmlcss" data-title="E-Commerce Website" data-description="A responsive e-commerce platform with product filtering, user reviews, and secure checkout, built using HTML, CSS, and JavaScript." data-tech="HTML, CSS, JavaScript">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="E-Commerce Website" loading="lazy">
+          <h3>E-Commerce</h3>
+          <p>A responsive e-commerce platform.</p>
+          <a href="https://your-demo-link.com/ecommerce" target="_blank" class="demo-link">View Demo</a>
+        </div>
+        <div class="project-card" data-tilt data-category="htmlcss" data-title="Portfolio Website" data-description="A personal portfolio showcasing projects and skills, designed with modern aesthetics using HTML, CSS, and JavaScript." data-tech="HTML, CSS, JavaScript">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Portfolio Website" loading="lazy">
+          <h3>Portfolio</h3>
+          <p>A personal portfolio website.</p>
+          <a href="https://your-demo-link.com/portfolio" target="_blank" class="demo-link">View Demo</a>
+        </div>
+        <div class="project-card" data-tilt data-category="dotnet" data-title="Blog Platform" data-description="A blog platform with a custom CMS for creating, editing, and publishing articles, developed with .NET and JavaScript." data-tech=".NET, JavaScript, SQL Server">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Blog Platform" loading="lazy">
+          <h3>Blog Platform</h3>
+          <p>A blog with a custom CMS.</p>
+          <a href="https://your-demo-link.com/blog-platform" target="_blank" class="demo-link">View Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial">
+          <p>"Fahad's Flutter expertise delivered a flawless app for our business."</p>
+          <h4>— Client A</h4>
+        </div>
+        <div class="testimonial">
+          <p>"His web solutions are creative and highly functional."</p>
+          <h4>— Peer B</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Fahad's professionalism and skills are top-notch."</p>
+          <h4>— Client C</h4>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-prev" aria-label="Previous testimonial">←</button>
+        <button class="carousel-next" aria-label="Next testimonial">→</button>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section id="cta-banner" class="section cta-banner">
+      <h2>Available for Freelance Projects!</h2>
+      <p>Let's build something amazing together.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Let's collaborate on your next project!</p>
+      <div class="contact-button-wrapper">
+        <button class="cta-button" id="open-contact-form">Email Me</button>
+        <a href="cv.pdf" download class="cta-button resume-button">Download Resume</a>
+      </div>
+      <p id="submission-counter">Messages sent: 0</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/muhammad-fahad-noor" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/fahad1084" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discordapp.com/users/1316392403476680728" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.reddit.com/u/Mysterious_Dot_1084/s/VfWUL1R9On" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+      </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="section">
+      <h2>Recent Posts</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3>Building a Flutter App</h3>
+          <p>Learn how to create a cross-platform app with Flutter and Firebase...</p>
+          <a href="https://your-blog.com/flutter-app" class="read-more">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h3>Mastering .NET APIs</h3>
+          <p>A guide to building scalable REST APIs with .NET...</p>
+          <a href="https://your-blog.com/dotnet-api" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h2>Send a Message</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error-message" id="name-error"></span>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" id="email-error"></span>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <span class="error-message" id="message-error"></span>
+          <button type="submit" class="cta-button" id="form-submit">Send</button>
+          <div class="loading-spinner" id="loading-spinner"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h2 id="project-title"></h2>
+        <img id="project-image" src="" alt="" loading="lazy">
+        <p id="project-description"></p>
+        <p><strong>Tech Stack:</strong> <span id="project-tech"></span></p>
+      </div>
+    </div>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Muhammad Fahad Noor. All rights reserved.</p>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="js\script.js"></script>
+</body>
+</html>
